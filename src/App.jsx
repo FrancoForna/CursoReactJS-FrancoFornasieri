@@ -21,7 +21,7 @@ function App() {
           Learn React
         </a>
         <button className="btn btn-dark"> Probando </button>
-        <navComponent />
+        <NavComponent />
       </header>
     </div>
   );
