@@ -1,0 +1,13 @@
+.navBar {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  .navBar_box {
+    display: flex;
+    background-color: gold;
+  }
+  .navBar_p {
+    color: gray;
+  }
+}

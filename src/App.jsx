@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.css'
+import './components/Nav'
+import { NavComponent } from "./components/Nav";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           Learn React
         </a>
         <button className="btn btn-dark"> Probando </button>
+        <navComponent />
       </header>
     </div>
   );
