@@ -1,13 +1,16 @@
 .navBar {
+  padding: 20px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   .navBar_box {
+    padding: 20px;
     display: flex;
-    background-color: gold;
+    background-color: rgb(255, 196, 0);
   }
   .navBar_p {
+    padding: 20px;
     color: gray;
   }
 }
