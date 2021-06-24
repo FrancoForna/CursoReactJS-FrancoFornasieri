@@ -1,6 +1,10 @@
-export const ItemListContainer = ({greetin})=> {
+export const ItemListContainer = ({name, price, img})=> {
 
     return (
-        <h1>{greetin}</h1>
+        <>
+        <h1>{name}</h1>
+        <strong>{price}</strong>
+        <img src={img}/>
+        </>
     )
 }

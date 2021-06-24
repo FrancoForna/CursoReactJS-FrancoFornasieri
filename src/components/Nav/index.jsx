@@ -1,8 +1,7 @@
 import './navstyle.scss';
-import { Icon } from '../../components/CartWidget/index'
 import { Carrito } from '../ItemCount'
 
-export const NavComponent = ({children}) => {
+export const NavComponent = () => {
     return (
 
         <nav className="navBar">
@@ -14,7 +13,6 @@ export const NavComponent = ({children}) => {
                 <p className="navBar_p"><a href="#index">Suscripcion</a></p>
                 <Carrito />
             </div>
-            {children}
         </nav>
     )
 }
