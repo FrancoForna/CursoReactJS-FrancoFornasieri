@@ -1,17 +1,56 @@
-import { useState} from 'react'
+import { useState } from "react";
+import "./carrito.scss";
 
-export const Carrito = () => {
-    const [carrito, setCarrito] = useState ([0]);
+export const ItemCount = ({ stock, initial, onAdd }) => {
+  const [contador, setContador] = useState(initial);
 
-    return (
-        <>
-        <section>
-            <button onClick={() => {setCarrito ([...carrito, { id:1 , name:"remera"}])}}>Agregar al carrito</button>
-            <p>Carrito</p>
-            <p>{carrito.length}</p>
-            <button onClick={() => {setCarrito([carrito.lenght -1])}}>Quitar al carrito</button>
-            
-        </section>
-        </>
-    )
-}
+  function agregar(contador, stock) {
+    if (contador < stock) {
+      return contador + 1;
+    } else {
+      return (contador = stock);
+    }
+  }
+  function restar(contador) {
+    if (contador > 1) {
+      return contador - 1;
+    } else {
+      return (contador = 1);
+    }
+  }
+  return (
+    <>
+      <section className="carrito">
+        <button
+          className="carrito_but"
+          onClick={() => {
+            setContador(agregar(contador, stock));
+          }}
+        >
+          {" "}
+          +{" "}
+        </button>
+        <p className="carrito_numb">{contador}</p>
+        <button
+          className="carrito_but"
+          onClick={() => {
+            setContador(restar(contador, stock));
+          }}
+        >
+          {" "}
+          -{" "}
+        </button>
+        <br></br>
+        <button
+          className="carrito_but2"
+          onClick={() => {
+            onAdd(contador);
+          }}
+        >
+          {" "}
+          Agregar al Carrito{" "}
+        </button>
+      </section>
+    </>
+  );
+};

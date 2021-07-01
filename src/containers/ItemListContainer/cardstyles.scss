@@ -1,0 +1,24 @@
+.card {
+  background-color: #484e5a;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  .card_t {
+    padding: 20px;
+    color: black;
+  }
+  .card_img {
+    height: 30%;
+    border-radius: 10%;
+    padding: 20px;
+    width: 40%;
+  }
+  .card_under {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+}

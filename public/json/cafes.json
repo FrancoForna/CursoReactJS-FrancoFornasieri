@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "name": "Mocaccino",
+      "price": 200,
+      "img": "https://img-global.cpcdn.com/recipes/0fc75b361278cb2c/751x532cq70/capuccino-foto-principal.jpg",
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "name": "Capuccino",
+      "price": 250,
+      "img": "https://img-global.cpcdn.com/recipes/0fc75b361278cb2c/751x532cq70/capuccino-foto-principal.jpg",
+      "stock": 10
+    },
+    {
+      "id": 3,
+      "name": "Latte",
+      "price": 180,
+      "img": "https://img-global.cpcdn.com/recipes/0fc75b361278cb2c/751x532cq70/capuccino-foto-principal.jpg",
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "name": "Caramel Macchiato",
+      "price": 300,
+      "img": "https://cdn.kiwilimon.com/recetaimagen/36988/th5-640x426-46353.jpg",
+      "stock": 10
+    },
+    {
+      "id": 5,
+      "name": "Espresso Lungo",
+      "price": 230,
+      "img": "https://i0.wp.com/kofetrend.ru/wp-content/uploads/2017/10/espresso-lungo.jpg",
+      "stock": 10
+    },
+    {
+      "id": 6,
+      "name": "Espresso Macchiato",
+      "price": 280,
+      "img": "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Espresso-Macchiato.jpg",
+      "stock": 10
+    }
+]

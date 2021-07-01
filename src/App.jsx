@@ -1,17 +1,17 @@
-
-import './App.scss';
-import 'bootstrap/dist/css/bootstrap.css'
-import './components/Nav'
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.css";
+import "./components/Nav";
 import { NavComponent } from "./components/Nav";
-import { ItemListContainer } from "./components/ItemListContainer";
+import { ItemListContainer } from "./containers/ItemListContainer";
+import { ItemDetailContainer } from "./containers/ItemDetailContainer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavComponent>
-        <ItemListContainer greetin={"Hola y bienvenido"}/>
-        </NavComponent>
+        <NavComponent />
+        {/* <ItemListContainer greeting={{ saludos: "bienvenido" }} /> */}
+        <ItemDetailContainer />
       </header>
     </div>
   );
