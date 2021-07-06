@@ -2,7 +2,7 @@ import "./cardstyles.scss";
 import { useState, useEffect } from "react";
 import { ItemList } from "../../components/ItemList";
 
-export const ItemListContainer = ({ greeting }) => {
+export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(async () => {

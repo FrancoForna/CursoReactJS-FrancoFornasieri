@@ -1,18 +1,18 @@
 .navBar {
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   .navBar_box {
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(255, 196, 0);
+    background-color: rgb(230, 178, 10);
   }
   .navBar_p {
-    padding: 20px;
+    padding: 15px;
     color: gray;
   }
 }

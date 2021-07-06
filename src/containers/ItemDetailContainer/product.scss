@@ -1,35 +1,40 @@
-.card {
+.card2 {
   background-color: #484e5a;
   width: 100%;
   padding: 10px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  .card_type {
-    width: 60%;
+  text-align: center;
+  .card2_type {
+    width: 50%;
     padding: 5px;
     display: flex;
     flex-flow: column wrap;
   }
-  .card_t {
+  .card2_t {
     padding: 10px;
     color: black;
   }
-  .card_img {
-    height: 100%;
+  .card2_t2 {
+    font-size: 20px;
+    color: black;
+  }
+  .card2_img {
+    height: 80%;
     border-radius: 10%;
     padding: 20px;
     width: 100%;
   }
-  .card_under {
+  .card2_under {
     padding: 20px;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
-  .card_button {
-    padding: 20px;
+  .card2_button {
+    padding: 10px;
     background-color: burlywood;
     margin: 10px;
     color: black;

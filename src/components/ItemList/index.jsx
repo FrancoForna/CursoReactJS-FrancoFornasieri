@@ -1,4 +1,4 @@
-import { CardComponent } from "../CardComponent";
+import { CardComponent } from "../Catalogo";
 
 export const ItemList = ({ products }) => {
   return (

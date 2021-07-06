@@ -1,19 +1,19 @@
-import "./App.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "./components/Nav";
 import { NavComponent } from "./components/Nav";
-import { ItemListContainer } from "./containers/ItemListContainer";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HomeContainer } from "../src/containers/HomeContainer";
 import { ItemDetailContainer } from "./containers/ItemDetailContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <NavComponent />
-        {/* <ItemListContainer greeting={{ saludos: "bienvenido" }} /> */}
-        <ItemDetailContainer />
-      </header>
-    </div>
+    <BrowserRouter>
+      <NavComponent />
+      <Switch>
+        <Route exact path="/" component={HomeContainer} />
+        <Route path="/item/:id" component={ItemDetailContainer} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

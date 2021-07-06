@@ -1,5 +1,3 @@
 export const Icon = () => {
-    return (
-        <p>Carrito</p>
-    )
-}
+  return <p>Carrito</p>;
+};
