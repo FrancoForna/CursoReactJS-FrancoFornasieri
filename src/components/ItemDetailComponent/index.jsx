@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import { ItemCount } from "../ItemCount";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../context/ShopContext";
 import "./detail.scss";
 
 export const ItemDetailComponent = ({ product }) => {
   const [random, setRandom] = useState(null);
+  const { addToCart } = useContext(ShopContext);
   const onAdd = (x) => {
-    alert(`Has agregado ${x} productos al carrito`);
+    addToCart(product, x);
     setRandom("para carrito");
   };
   return (
