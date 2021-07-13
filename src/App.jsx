@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { HomeContainer } from "../src/containers/HomeContainer";
 import { ItemDetailContainer } from "./containers/ItemDetailContainer";
 import { CategoryComponents } from "./containers/trial";
-import { carritoContainer } from "../src/components/CarritoContainer";
+import { CarritoContainer } from "../src/components/CarritoContainer";
 import { useEffect } from "react";
 import { ShopComponentContext } from "./context/ShopContext";
 
@@ -27,7 +27,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomeContainer} />
           <Route path="/item/:id" component={ItemDetailContainer} />
-          <Route path="/carritoContainer" component={carritoContainer} />
+          <Route path="/carritoContainer" component={CarritoContainer} />
           <Route path="/item/:category" component={CategoryComponents} />
         </Switch>
       </BrowserRouter>

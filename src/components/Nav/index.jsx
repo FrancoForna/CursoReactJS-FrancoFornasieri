@@ -1,8 +1,11 @@
 import "./navstyle.scss";
 import { Link, useParams } from "react-router-dom";
 import { CategoryComponents } from "../../containers/trial";
+import { useContext } from "react";
+import { ShopContext } from "../../context/ShopContext";
 
 export const NavComponent = (product) => {
+  const { cart } = useContext(ShopContext);
   return (
     <nav className="navBar">
       <div className="navBar_box">
@@ -37,6 +40,11 @@ export const NavComponent = (product) => {
             <li className="listM">
               <Link to="/" className="navBar_p">
                 Dolce Vita
+              </Link>
+            </li>
+            <li className="listM">
+              <Link to="/carritoContainer" className="navBar_p">
+                Carrito:{cart.length}
               </Link>
             </li>
           </ul>
