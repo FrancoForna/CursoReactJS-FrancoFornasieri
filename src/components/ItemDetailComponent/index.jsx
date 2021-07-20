@@ -25,7 +25,7 @@ export const ItemDetailComponent = ({ product }) => {
           </p>
         </div>
         <div className="card2_type">
-          <h2 className="card2_t">{product.name}</h2>
+          <h2 className="card2_t">{product.category}</h2>
           <strong className="card2_t">${product.price}</strong>
           <strong className="card2_t">Stock: {product.stock}</strong>
           {!random ? (

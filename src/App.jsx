@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./components/Nav";
 import { NavComponent } from "./components/Nav";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { HomeContainer } from "../src/containers/HomeContainer";
 import { ItemDetailContainer } from "./containers/ItemDetailContainer";
 import { CategoryComponents } from "./containers/trial";
