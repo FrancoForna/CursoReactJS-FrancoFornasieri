@@ -12,9 +12,6 @@ export const CardComponent = ({ product }) => {
     }
     getData();
   }, []);
-  const onAdd = (x) => {
-    alert(`Agregaste ${x} productos al carrito`);
-  };
 
   return (
     <div className="card">

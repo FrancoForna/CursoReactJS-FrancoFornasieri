@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetailComponent } from "../../components/ItemDetailComponent";
 import "../ItemDetailContainer/product.scss";

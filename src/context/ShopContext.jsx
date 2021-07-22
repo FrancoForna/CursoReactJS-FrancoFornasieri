@@ -1,5 +1,6 @@
 import { createContext } from "react";
 import { useEffect, useState } from "react";
+import { getFirestore } from "../firebase/client";
 
 export const ShopContext = createContext();
 console.log(ShopContext);
@@ -22,6 +23,15 @@ export const ShopComponentContext = ({ children }) => {
   const clearCart = () => {
     setCart([]);
   };
+
+  const createOrder = (name, email, phone) => {
+    const order = {
+      buyer: { email: email, name: name, phone: phone },
+    };
+    const db = getFirestore();
+    db.collection("orders").add(order);
+  };
+
   const removeItem = (product) => {
     let newCart = [];
     cart.map((element) => {
@@ -31,9 +41,14 @@ export const ShopComponentContext = ({ children }) => {
     });
     setCart(newCart);
   };
+  // const getTotal = (product) => {
+
+  // }
   useEffect(() => {}, [cart]);
   return (
-    <ShopContext.Provider value={{ cart, addToCart, clearCart, removeItem }}>
+    <ShopContext.Provider
+      value={{ createOrder, cart, addToCart, clearCart, removeItem }}
+    >
       {children}
     </ShopContext.Provider>
   );
