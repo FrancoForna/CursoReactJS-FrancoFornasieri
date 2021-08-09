@@ -35,3 +35,29 @@
   padding: 15px;
   display: inline;
 }
+.carrito_butt {
+  margin: 5px 0 0 120px;
+  padding: 5px;
+  width: 50%;
+  background-color: chocolate;
+  text-align: center;
+}
+.carrito {
+  padding: 50px;
+
+  .carrito_but {
+    margin: 5px;
+    padding: 5px;
+    width: 50%;
+    background-color: chocolate;
+  }
+  .carrito_but2 {
+    margin: 5px;
+    padding: 5px;
+    background-color: chocolate;
+  }
+  .carrito_numb {
+    font-size: 30px;
+    color: black;
+  }
+}

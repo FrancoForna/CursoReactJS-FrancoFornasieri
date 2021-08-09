@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../../context/ShopContext";
 import { Link } from "react-router-dom";
+import "../styles.scss";
 
 export const CarritoContainer = () => {
   const { cart, clearCart, removeItem } = useContext(ShopContext);
@@ -18,11 +19,15 @@ export const CarritoContainer = () => {
       {cart.map((product) => {
         return (
           <>
-            <div>
-              <div>producto:{product.item.name}</div>
-              <div>cantidad:{product.cantidad}</div>
-              <button onClick={() => removeItem(product)}>Eliminar item</button>
-              <Form></Form>
+            <div className="card">
+              <div className="card_type">
+                <div>producto:{product.item.name}</div>
+                <div>cantidad:{product.cantidad}</div>
+                <button onClick={() => removeItem(product)}>
+                  Eliminar item
+                </button>
+                <Form></Form>
+              </div>
             </div>
           </>
         );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./carrito.scss";
+import "../styles.scss";
 
 export const ItemCount = ({ stock, initial, onAdd }) => {
   const [contador, setContador] = useState(initial);

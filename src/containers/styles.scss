@@ -1,0 +1,96 @@
+.card {
+  background-color: #484e5a;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  .card_type {
+    width: 60%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .card_t {
+    padding: 10px;
+    color: black;
+  }
+  .card_img {
+    height: 100%;
+    border-radius: 10%;
+    padding: 20px;
+    width: 100%;
+  }
+  .card_under {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .card_button {
+    padding: 20px;
+    background-color: burlywood;
+    margin: 10px;
+    color: black;
+  }
+}
+.card2 {
+  background-color: #484e5a;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  .card2_type {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .card2_t {
+    padding: 10px;
+    color: black;
+  }
+  .card2_t2 {
+    font-size: 20px;
+    color: black;
+  }
+  .card2_img {
+    height: 80%;
+    border-radius: 10%;
+    padding: 20px;
+    width: 100%;
+  }
+  .card2_under {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .card2_button {
+    padding: 10px;
+    background-color: burlywood;
+    margin: 10px;
+    color: black;
+  }
+}
+.App {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: burlywood;
+  align-content: space-around;
+
+  .App-header {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+}

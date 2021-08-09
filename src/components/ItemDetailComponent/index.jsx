@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ItemCount } from "../ItemCount";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../context/ShopContext";
-import "./detail.scss";
+import "../styles.scss";
 
 export const ItemDetailComponent = ({ product }) => {
   const [random, setRandom] = useState(null);

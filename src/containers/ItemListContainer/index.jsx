@@ -1,4 +1,4 @@
-import "./cardstyles.scss";
+import "../styles.scss";
 import { useState, useEffect } from "react";
 import { getFirestore } from "../../firebase/client";
 import { CardComponent } from "../../components/Catalogo";

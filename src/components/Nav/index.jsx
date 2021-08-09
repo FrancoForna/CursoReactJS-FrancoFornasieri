@@ -1,6 +1,6 @@
-import "./navstyle.scss";
+import "../styles.scss";
 import { Link, useParams } from "react-router-dom";
-import { CategoryComponents } from "../../containers/trial";
+// import { CategoryComponents } from "../../containers/trial";
 import { useContext } from "react";
 import { ShopContext } from "../../context/ShopContext";
 
